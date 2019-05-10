@@ -10,20 +10,27 @@ using namespace std;
 class Defense {
 protected:
         int Level;
-        string Identificador;
+
 public:
-    Defense(int);
+    Defense();
+    //Poner en minuscula no me genera error
+    int defense(){
+        return Level;
+    }
 };
 class Elude : public Defense{
-public:
-    Elude(string,int);
+    Elude(){
+        this->Level=1;
+    };
 };
 class Shield : public Defense{
-public:
-    string Identificador;
+    Shield(){
+        this->Level=4;
+    };
 };
 class Armor : public Defense{
-public:
-    string Identificador;
+    Armor(){
+        this->Level=8;
+    };
 };
 #endif //PC2_DEFENSE_H
