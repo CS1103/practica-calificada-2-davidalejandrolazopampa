@@ -1,4 +1,8 @@
 #include <iostream>
+#include "Fighter.h"
+
+
+using namespace std;
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
